@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jesus Ponte</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'styles.css') }}">
+    <link rel="icon"
+      type="image/png"
+      href="{{ url_for('static', filename= 'j-icon.svg') }}">
+</head>
+<body>
+  <div class="container">
+      <div class="header">
+          <div class="header-title"><p>Jesus Ponte</p></div>
+          <div class="header-nav">
+              <a href="#section-1">About me</a>
+              <a href="#section-2">Experience</a>
+              <a href="">Soft Skills</a>
+              <a href="">Certs</a>
+          </div>
+      </div>
+      <div class="section-1" id="section-1">
+          <div class="about-left">
+              <h1>Nice to meet you!</h1>
+              <p>My name is Jesus Ponte, I'm a Data analyst and junior web developer.
+                  My goal is to provide solutions in response to my client needs,
+                  ranging from development of applications to data analysis. I'm motivated to gain knowledge daily so i
+                  can offer faster and effective solutions.
+
+
+              </p>
+              <h2>Follow me on my socials!</h2>
+              <div class="about-icons">
+                  <img src="{{url_for('static', filename='insta-icon.svg') }}" alt="">
+                  <img src="{{url_for('static', filename='linkedin-icon.svg') }}" alt="">
+              </div>
+              <h2>Download my CV</h2>
+              <div class="about-icons">
+                  <a href="{{url_for('static', filename='Ponte_Jesus_CV_2022.pdf') }}" download="Ponte_Jesus_CV_2022">
+                    <img src="{{url_for('static', filename='cv-icon.svg') }}" alt="">
+                  </a>
+              </div>
+          </div>
+          <div class="about-right">
+              <img src="{{url_for('static', filename='img-jesus.jpg') }}" alt="">
+          </div>
+      </div>
+      <div class="section-2" id="section-2">
+          <div class="section-2-title">
+              <h2>Experience</h2>
+              <p>Short timeline of my studies and work experience</p>
+          </div>
+
+          <div class="section-2-card">
+                <div class="card-title">
+                    <img src="{{ url_for('static', filename= 'cap-icon.svg') }}" alt="">
+                    <h3>Universidad Metropolitana</h3>
+                    <p>Systems Engineering (2013-2019)</p>
+                </div>
+                <div class="card-content">
+                    <p>This degree allowed me to learn about analysis, design, development and deployment of information systems.</p>
+                    <p>Helped me develop problem solving skills, use of emerging tecnologies and operations research.</p>
+                    <p>Most proyects were focused on web and mobile development.</p>
+                </div>
+          </div>
+          <div class="section-2-card">
+                <div class="card-title">
+                    <img src="{{ url_for('static', filename= 'webdev-icon.svg') }}" alt="">
+                    <h3>Aether Solutions</h3>
+                    <p>Web Developer (2017-2020)</p>
+                </div>
+                <div class="card-content">
+                    <p>This was my first job as a developer.</p>
+                    <ul>
+                        <li>My task was to create web and mobile applications with the help of other team members</li>
+                        <li>Focused en stores and inventory management solutions</li>
+                        <li>Web page development according to client specifications</li>
+                    </ul>
+
+                </div>
+          </div>
+          <div class="section-2-card">
+                <div class="card-title">
+                    <img src="{{ url_for('static', filename= 'data-icon.svg') }}" alt="">
+                    <h3>Niu Solutions</h3>
+                    <p>Data Analyst (2020-Today)</p>
+                </div>
+                <div class="card-content">
+                    <p>This is a marketing company based in Guatemala. Focused in digital transformation using a different array of solutions.
+                    The following are the tasks perfomed by my role as a data analyst: </p>
+                    <ul>
+                        <li>Data analysis and presentation with PowerBi</li>
+                        <li>Extration, transformation and loading of data</li>
+                        <li>Report creation and automation</li>
+                        <li>Machine learning</li>
+                        <li>KPI analysis</li>
+                        <li>API creation for data consumption</li>
+                    </ul>
+
+                </div>
+          </div>
+
+      </div>
+
+
+  </div>
+</body>
+</html>

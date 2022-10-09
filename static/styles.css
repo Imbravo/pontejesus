@@ -240,10 +240,35 @@ body{
 
 }
 
+.section-1-mobile{
+    display: none;
+}
+
 @media screen and (max-width: 1000px) {
     .section-1{
         display: none;
     }
+
+    .section-1-mobile{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-left{
+        width: 100%;
+    }
+
+    .about-left p{
+        width: 90%;
+    }
+
+    .about-right{
+        width: 100%;
+        text-align: center;
+    }
+
+
+
 }
 
 

@@ -298,6 +298,11 @@ body{
     }
 }
 
+@media screen and (max-width: 1450px) {
+    .section-1{
+        height: 100vh;
+    }
+}
 
 
 
